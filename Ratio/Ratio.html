@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ratio Solutions - Consultoría</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            transition: all 0.3s ease;
+        }
+
+        header {
+            background-color: #BF9924;
+            color: #000;
+            text-align: center;
+            padding: 1em 0;
+            position: relative;
+        }
+
+        header .logo-container {
+            background-color: #000;
+            display: inline-block;
+            padding: 10px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        header .logo-container img {
+            max-width: 100px;
+            border-radius: 50%;
+            transition: transform 0.5s;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 2em auto;
+            padding: 1em;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            border: 1px solid #BF9924;
+            border-radius: 5px;
+        }
+
+        ul li {
+            padding: 10px;
+            border-bottom: 1px solid #BF9924;
+            transition: all 0.3s ease;
+        }
+
+        ul li:last-child {
+            border-bottom: none;
+        }
+
+        ul li:hover {
+            background-color: #BF9924;
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em 0;
+            background-color: #BF9924;
+            color: #000;
+            transition: background 0.3s ease;
+        }
+
+        footer:hover {
+            background-color: #A87D1F;
+        }
+
+        a {
+            color: #000;
+            text-decoration: none;
+            transition: text-decoration 0.3s ease;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .slogan {
+            font-style: italic;
+            margin-top: 10px;
+            animation: fadeIn 2s;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .language-switcher {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+        }
+
+        .language-switcher a {
+            margin-left: 10px;
+            font-weight: bold;
+            color: white;
+        }
+    </style>
+
+    <script>
+       document.addEventListener('DOMContentLoaded', function () {
+    const logo = document.querySelector('.logo-container img');
+    document.addEventListener('mousemove', (e) => {
+        const moveX = (e.pageX - window.innerWidth / 2) * 0.01;
+        const moveY = (e.pageY - window.innerHeight / 2) * 0.01;
+        logo.style.transform = `translate(${moveX}px, ${moveY}px)`;
+    });
+});
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="language-switcher">
+            <a href="index_es.html">ES</a>
+            <a href="index_en.html">EN</a>
+        </div>
+        <div class="logo-container">
+            <img src="imagenes/Ratiologo.png" alt="Logo de Ratio Solutions">
+        </div>
+        <h1>Ratio Solutions</h1>
+        <p class="slogan">Conduciendo tu Impulso</p>
+        <p>Consultoría Profesional</p>
+    </header>
+
+    <main>
+        <h2>Bienvenidos</h2>
+        <p>En Ratio Solutions ofrecemos soluciones consultivas para tu empresa, ayudándote a optimizar procesos y mejorar resultados.</p>
+        <h3>Servicios</h3>
+        <ul>
+            <li>Social Media Managment</li>
+            <li>Content Development</li>
+            <li>Web Development</li>
+            <li>IT Development</li>
+            <li>Financial Assesment</li>
+            <li>Marketing Assesment</li>
+            <li>Complete Entreprenurial Development</li>
+            <li>Complete Bussiness Assesment</li>
+            <li>HR Formation</li>
+            <li>Courses</li>
+        </ul>
+        <p>Si estás interesado en nuestros servicios, <a href="contacto.html">contáctanos</a>.</p>
+    </main>
+
+    <footer>
+        <p>© 2023 Ratio Solutions. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
+
